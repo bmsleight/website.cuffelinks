@@ -4,6 +4,11 @@
 2 - echo unsecure!; sudo pip install -e git://github.com/getpelican/pelican#egg=pelican
 3 - echo unsecure!; sudo pip install Markdown
 4 - echo unsecure!; sudo pip install -e git+git://github.com/davisp/ghp-import.git#egg=ghp-import
+sudo apt-get install python-dev
+sudo apt-get install libjpeg-dev
+
+- echo unsecure!; sudo pip install pelican-advthumbnailer
+
 4 - Create repository; with python .gitignore
 5 - git clone https://github.com/XXX/zzzzz
 6 - cd zzzzz

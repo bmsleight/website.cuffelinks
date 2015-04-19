@@ -10,6 +10,9 @@ PATH = 'content'
 
 TIMEZONE = 'Europe/London'
 
+
+
+
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
@@ -33,7 +36,7 @@ SOCIAL = (
           ('github', 'https://github.com/bmsleight/cuffelink'),
          )
 
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -44,3 +47,8 @@ RELATIVE_URLS = True
 THEME = './pelican-bootstrap/'
 PELICAN_SOBER_ABOUT = "A site documenting my fun in developing electronic cufflinks aka cuffelinks"
 # https://gifvine.co/
+
+STATIC_PATHS = (['images'])
+
+PLUGINS = ['advthumbnailer']
+
