@@ -30,9 +30,8 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 
 # Social widget
 SOCIAL = (
-          ('vine', 'https://vine.co/u/1184667419080282112'),
           ('twitter', 'https://twitter.com/bmsleight'),
-          ('github', 'https://github.com/bmsleight'),
+          ('github', 'https://github.com/bmsleight/chameleon-cufflink'),
           ('github', 'https://github.com/bmsleight/cuffelink'),
          )
 

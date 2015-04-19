@@ -6,6 +6,8 @@
 4 - echo unsecure!; sudo pip install -e git+git://github.com/davisp/ghp-import.git#egg=ghp-import
 sudo apt-get install python-dev
 sudo apt-get install libjpeg-dev
+sudo apt-get install zlib1g-dev
+{sudo pip install -I pillow}
 
 - echo unsecure!; sudo pip install pelican-advthumbnailer
 
@@ -23,5 +25,6 @@ sudo apt-get install libjpeg-dev
 
 10 - make github
 11 - git add .
-12 - git push --all
+12 - git commit -m "Updating website"
+12B- git push --all
 
