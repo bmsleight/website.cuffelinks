@@ -23,13 +23,24 @@ AUTHOR_FEED_RSS = None
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+         )
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+          ('vine', 'https://vine.co/u/1184667419080282112'),
+          ('twitter', 'https://twitter.com/bmsleight'),
+          ('github', 'https://github.com/bmsleight'),
+          ('github', 'https://github.com/bmsleight/cuffelink'),
+         )
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
+
+# Look at https://github.com/fle/fle.github.io/tree/content
+
+#THEME
+THEME = './pelican-bootstrap/'
+PELICAN_SOBER_ABOUT = "A site documenting my fun in developing electronic cufflinks aka cuffelinks"
+# https://gifvine.co/

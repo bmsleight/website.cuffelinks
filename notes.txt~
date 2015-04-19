@@ -1,0 +1,19 @@
+
+
+1 - Install pip # I dont do virenv!
+2 - echo unsecure!; sudo pip install -e git://github.com/getpelican/pelican#egg=pelican
+3 - echo unsecure!; sudo pip install Markdown
+4 - echo unsecure!; sudo pip install -e git+git://github.com/davisp/ghp-import.git#egg=ghp-import
+4 - Create repository; with python .gitignore
+5 - git clone https://github.com/XXX/zzzzz
+6 - cd zzzzz
+7 - pelican-quickstart
+8 - nano content/test.md
+8 - make html 
+9 - make serve 
+# see localhost:8000
+
+10 make github
+# see http://XXXX.github.io/zzzzz/
+
+
