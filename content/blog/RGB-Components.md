@@ -25,3 +25,5 @@ It would be nice to reduce this down by one or two. Limiting factors:-
 
 Giving at least 5.2mm, which means I can not (thanks to the switch) fit everything in just 5 layers. Top, bottom and 6mm inners. Time to sketch the PCB in [https://www.tinkercad.com/](https://www.tinkercad.com/)
 
+####Mock Up of PCB
+<a href="images/RGB-Components/tinkercad_mock_up.png"><img src="images/RGB-Components/thumbnails/480x_/tinkercad_mock_up.png" /></a>
