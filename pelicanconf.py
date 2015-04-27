@@ -34,8 +34,11 @@ SOCIAL = (
           ('github', 'https://github.com/bmsleight/chameleon-cufflink'),
           ('github', 'https://github.com/bmsleight/cuffelink'),
          )
+#SHARIFF = True
+TWITTER_USERNAME = 'bmsleight'
 
 DEFAULT_PAGINATION = 10
+USE_PAGER = True
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -51,3 +54,5 @@ STATIC_PATHS = (['images'])
 
 PLUGINS = ['advthumbnailer']
 
+#ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
+#ARTICLE_SAVE_AS = './{date:%Y}/{date:%m}/{slug}.html'
