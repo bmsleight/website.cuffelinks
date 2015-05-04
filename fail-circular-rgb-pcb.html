@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>Categories - Cuffelinks</title>
+    <title>Fail - Circular RGB PCB - Cuffelinks</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,15 +10,24 @@
 
 
 
+<link rel="canonical" href="./fail-circular-rgb-pcb.html">
 
         <meta name="author" content="Brendan M. Sleight" />
+        <meta name="keywords" content="cuffelinks,rgb,PCB,fail" />
+        <meta name="description" content="Fail - Circular RGB PCB" />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Cuffelinks" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Cuffelinks"/>
-        <meta property="og:url" content="."/>
-        <meta property="og:description" content="Cuffelinks"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Fail - Circular RGB PCB"/>
+        <meta property="og:url" content="./fail-circular-rgb-pcb.html"/>
+        <meta property="og:description" content="Fail - Circular RGB PCB"/>
+        <meta property="article:published_time" content="2015-05-04" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="cuffelinks" />
+            <meta property="article:tag" content="rgb" />
+            <meta property="article:tag" content="PCB" />
+            <meta property="article:tag" content="fail" />
+            <meta property="article:author" content="Brendan M. Sleight" />
 
 
     <!-- Bootstrap -->
@@ -51,7 +60,7 @@ Cuffelinks            </a>
                          <li><a href="./pages/about.html">
                              About
                           </a></li>
-                        <li >
+                        <li class="active">
                             <a href="./category/blog.html">Blog</a>
                         </li>
             </ul>
@@ -68,30 +77,81 @@ Cuffelinks            </a>
     <div class="row">
         <div class="col-sm-9">
 
-    <section id="categories">
-        <h1>All Categories for Cuffelinks</h1>
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-blog">blog <span class="badge pull-right">7</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-blog" class="panel-collapse collapse">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./fail-circular-rgb-pcb.html"
+                       rel="bookmark"
+                       title="Permalink to Fail - Circular RGB PCB">
+                        Fail - Circular RGB PCB
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
                     <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2015-05-04T17:00:00+01:00">Mon 04 May 2015</time></span> <a href="./fail-circular-rgb-pcb.html">Fail - Circular RGB PCB</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2015-04-27T21:34:00+01:00">Mon 27 April 2015</time></span> <a href="./circular-rgb-pcb.html">Circular RGB PCB</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2015-04-22T23:59:00+01:00">Wed 22 April 2015</time></span> <a href="./rectangle-rag-pcb.html">Rectangle RAG PCB</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2015-04-20T23:59:00+01:00">Mon 20 April 2015</time></span> <a href="./laser-cut-traffic-light-cufflink.html">Laser Cut Traffic Light Cufflink</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2015-04-19T21:00:00+01:00">Sun 19 April 2015</time></span> <a href="./rgb-components.html">RGB Components</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2015-04-19T17:00:00+01:00">Sun 19 April 2015</time></span> <a href="./miniature-rgb.html">Miniature RGB</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2015-04-19T10:00:00+01:00">Sun 19 April 2015</time></span> <a href="./pelican-is-cool.html">Pelican is cool</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-05-04T17:00:00+01:00"> Mon 04 May 2015</time>
+    </span>
 
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/cuffelinks.html">cuffelinks</a>
+        /
+	<a href="./tag/rgb.html">rgb</a>
+        /
+	<a href="./tag/pcb.html">PCB</a>
+        /
+	<a href="./tag/fail.html">fail</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p><strong>Epic fail</strong>. My <a href="./circular-rgb-pcb.html">circular PCB</a> will not work. I did the testing using 5V from the arduino nano board. Without thinking through what the cell batteries will actually deliver. Looking up the <a href="http://www.adafruit.com/datasheets/TCS34725.pdf">datasheet for the TCS34725</a> I remembers that I needed at least 3V3 for the supply, also the Blue LED on the <a href="http://www.avagotech.com/docs/AV02-2451EN">HSMF-C114</a> of typically 3V4. No problem - I had designed the circuit to run on 2 cell barreries, which deliver 6V.</p>
+<p><strong>But</strong> The cells delivery between 3V and 3V7. In reality I am getting above 3V with one cell, in fact enough to run the Green LED at 3V4. However if I run the ATTiny with one cell the voltage drops are such that the Green and blue LED are not lit. </p>
+<p>Ok two cells. </p>
+<p><strong>But</strong> The cells delivery between 3V and 3V7. So this gives above 6V, which mean the ATTiny cuts out. </p>
+<h4>Just one cell - direct to Green LED</h4>
+<p><img src="images/Fail-Circular-RGB-PCB/Above_3V.gif" /></p>
+<h4>Just one cell - via ATTiny no Green</h4>
+<p><img src="images/Fail-Circular-RGB-PCB/fail_2_voltages._..,.gif" /></p>
+<h4>Two cells - ATTinys cuts out</h4>
+<p><img src="images/Fail-Circular-RGB-PCB/fail_explanation_later.gif" /></p>
+<h3>Ok Give me Solutions</h3>
+<p>So how do I get around this problem ? </p>
+<p>I discounted <a href="http://en.wikipedia.org/wiki/Zener_diode">zener diodes</a>, current leakage too high. Also <a href="http://en.wikipedia.org/wiki/Voltage_divider">Voltage divider</a> for the same reason.  There must be a small form IC .... After many minutes googling. </p>
+<p><a href="http://www.linear.com/product/LTC3212">LTC3212 - RGB LED Driver and Charge Pump</a></p>
+<p><em>From the <a href="http://www.linear.com/product/LTC3212">product page</a></em></p>
+<ul>
+<li>Power and Current Control for Driving RGB LEDs</li>
+<li>Individually Programmable Current Sources</li>
+<li>1x or 2x Mode, Low Noise, Constant Frequency Charge Pump</li>
+<li>Single Wire Enable Control for All LEDs</li>
+<li>White Mode Adjusts R, G, B Currents for White Light</li>
+<li>25mA Maximum LED Current</li>
+<li>VIN Range: 2.7V to 5.5V</li>
+<li>Automatic Soft-Start, Mode Switching and Output Disconnect in Shutdown Mode</li>
+<li>Available in 12-Lead (3mm × 2mm) DFN Package</li>
+</ul>
+<p><a href="images/Fail-Circular-RGB-PCB/7205.png"><img src="images/Fail-Circular-RGB-PCB/thumbnails/480x_/7205.png" /></a></p>
+<p>I have requested some <a href="http://www.linear.com/samples/LTC3212">samples</a>, and whipped up another <a href="https://github.com/bmsleight/chameleon-cufflink/tree/master/pcb/breakout-test-pcb-LTC3212">breakout board in KiCAD</a> order with <a href="https://oshpark.com/">https://oshpark.com/</a>.</p>
+<p><a href="images/Fail-Circular-RGB-PCB/oshpark1.png"><img src="images/Fail-Circular-RGB-PCB/thumbnails/480x_/oshpark1.png" /></a></p>
+<h3>Love the costs</h3>
+<p><a href="images/Fail-Circular-RGB-PCB/oshpark2.png"><img src="images/Fail-Circular-RGB-PCB/thumbnails/480x_/oshpark2.png" /></a></p>
+<h4>Final notes</h4>
+<p><a href="https://oshpark.com/">https://oshpark.com/</a> has just emailed within a few hours....</p>
+<blockquote>
+<p>We've sent the panel containing your boards to the fabricator. We expect to get them back around May 16th.
+In case you're interested, there are 82 other orders on the panel along with yours, adding up to a total of 450 boards. Neat eh? </p>
+</blockquote>
+            </div>
+            <!-- /.entry-content -->
+        </article>
     </section>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
