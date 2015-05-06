@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>Pelican is cool - Cuffelinks</title>
+    <title>Stop that Flash Jitter - Cuffelinks</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,20 +11,23 @@
 
 
 
-<link rel="canonical" href="./pelican-is-cool.html">
+<link rel="canonical" href="./stop-that-flash-jitter.html">
 
         <meta name="author" content="Brendan M. Sleight" />
-        <meta name="keywords" content="pelican" />
-        <meta name="description" content="Pelcian is cool" />
+        <meta name="keywords" content="cuffelinks,traffic,rag,arduino" />
+        <meta name="description" content="Stop that Flash Jitter, simple ardunio sketch for traffic signals" />
 
         <meta property="og:site_name" content="Cuffelinks" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Pelican is cool"/>
-        <meta property="og:url" content="./pelican-is-cool.html"/>
-        <meta property="og:description" content="Pelcian is cool"/>
-        <meta property="article:published_time" content="2015-04-19" />
+        <meta property="og:title" content="Stop that Flash Jitter"/>
+        <meta property="og:url" content="./stop-that-flash-jitter.html"/>
+        <meta property="og:description" content="Stop that Flash Jitter, simple ardunio sketch for traffic signals"/>
+        <meta property="article:published_time" content="2015-05-06" />
             <meta property="article:section" content="blog" />
-            <meta property="article:tag" content="pelican" />
+            <meta property="article:tag" content="cuffelinks" />
+            <meta property="article:tag" content="traffic" />
+            <meta property="article:tag" content="rag" />
+            <meta property="article:tag" content="arduino" />
             <meta property="article:author" content="Brendan M. Sleight" />
 
     <meta name="twitter:card" content="summary">
@@ -83,10 +86,10 @@ Cuffelinks            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="./pelican-is-cool.html"
+                    <a href="./stop-that-flash-jitter.html"
                        rel="bookmark"
-                       title="Permalink to Pelican is cool">
-                        Pelican is cool
+                       title="Permalink to Stop that Flash Jitter">
+                        Stop that Flash Jitter
                     </a>
                 </h1>
             </header>
@@ -96,18 +99,78 @@ Cuffelinks            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-04-19T10:00:00+01:00"> Sun 19 April 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-05-06T14:00:00+01:00"> Wed 06 May 2015</time>
     </span>
 
 
 
 <span class="label label-default">Tags</span>
-	<a href="./tag/pelican.html">pelican</a>
+	<a href="./tag/cuffelinks.html">cuffelinks</a>
+        /
+	<a href="./tag/traffic.html">traffic</a>
+        /
+	<a href="./tag/rag.html">rag</a>
+        /
+	<a href="./tag/arduino.html">arduino</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Cuffelinks is super cool.
-.</p>
+                <p>Now I have written a full, interrupt driven sketches for an <a href="https://github.com/bmsleight/arduino-traffic-signals">arduino running some traffic signals</a>. An extract is shown below:-</p>
+<div class="highlight"><pre>  <span class="k">if</span> <span class="p">((</span><span class="n">_state</span> <span class="o">==</span> <span class="n">PHASE_GREEN</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">_phase_change</span> <span class="o">==</span> <span class="n">PHASE_CHANGE_TO_RED</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// On Green want Red</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ran_min_green</span><span class="p">())</span> <span class="p">{</span>
+      <span class="n">_state</span> <span class="o">=</span> <span class="n">PHASE_POST_GREEN</span><span class="p">;</span>
+      <span class="n">_phase_change</span> <span class="o">=</span> <span class="n">PHASE_CHANGE_NONE</span><span class="p">;</span>
+      <span class="n">_time_since_green_milliseconds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="n">_time_on_current_state_milliseconds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">debug_to_serial</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Leaving Green&quot;</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+
+
+<p><img src="images/Stop-that-Flash-Jitter/arduino-traffic-signals.gif" /></p>
+<p>However for this project, I do not need interrupts - so I using some simplicity on the timing. I also do not want the signals to cycle forever so I have added an END_SEQUENCE. Based upon the <a href="./rectangle-rag-pcb.html">rectangle PCB</a> With the following circuit, I put together a simple sketch. I borrowed the concept of using bits for each of the Red, Amber and Green from <a href="http://homepage.ntlworld.com/vangelderp/">Paul Van Gelder</a> </p>
+<p><a href="images/Stop-that-Flash-Jitter/circuit-diagram.png"><img src="images/Stop-that-Flash-Jitter/thumbnails/480x_/circuit-diagram.png" /></a></p>
+<div class="highlight"><pre><span class="cp">#define RED 1</span>
+<span class="cp">#define AMBER 2</span>
+<span class="cp">#define GREEN 4</span>
+<span class="cp">#define RED_FLASH 8</span>
+<span class="cp">#define AMBER_FLASH 16</span>
+<span class="cp">#define GREEN_FLASH 32</span>
+</pre></div>
+
+
+<p>Then I can define each sequence as follows:-</p>
+<div class="highlight"><pre><span class="n">sequence</span><span class="p">[</span><span class="n">SEQUENCE_TYPES</span><span class="p">][</span><span class="n">MAX_STEPS</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>  <span class="o">=</span>
+<span class="p">{</span>
+  <span class="p">{</span> <span class="c1">// Normal Traffic RAG</span>
+  <span class="p">{</span><span class="n">RED</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span>
+  <span class="p">{</span><span class="n">RED</span> <span class="o">+</span> <span class="n">AMBER</span><span class="p">,</span> <span class="mi">2</span><span class="p">},</span>
+  <span class="p">{</span><span class="n">GREEN</span><span class="p">,</span> <span class="mi">7</span><span class="p">},</span>
+  <span class="p">{</span><span class="n">AMBER</span><span class="p">,</span> <span class="mi">2</span><span class="p">},</span>
+  <span class="p">{</span><span class="n">RED</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span>
+  <span class="p">{</span><span class="n">END_SEQUENCE</span><span class="p">,</span> <span class="mi">1</span><span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>With some neat boolean logic</p>
+<div class="highlight"><pre><span class="n">flash</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span> <span class="c1">// or ~255 (0)</span>
+<span class="n">leds</span> <span class="o">=</span> <span class="n">sequence</span><span class="p">[</span><span class="n">s</span><span class="p">][</span><span class="n">current_step</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">digitalWrite</span><span class="p">(</span><span class="n">RED_PIN</span><span class="p">,</span> <span class="p">(</span><span class="n">leds</span> <span class="o">&amp;</span> <span class="n">RED</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">leds</span> <span class="o">&amp;</span> <span class="n">RED_FLASH</span> <span class="o">&amp;</span> <span class="n">flash</span><span class="p">));</span>
+</pre></div>
+
+
+<p>My first attempt, I was running low on memory for global variables. Which in the end caused the ATTiny45 to crash. The solution is to use <a href="http://www.arduino.cc/en/Reference/PROGMEM">PROGMEM - Store data in flash (program) memory instead of SRAM</a>. Using PROGMEM is also a two-step procedure, it requires special methods (functions) to read the data from program memory back into SRAM, so we can do something useful with it. Some good hints from this <a href="https://github.com/lilspikey/arduino_sketches/blob/master/attiny/xmas/xmas.ino">sketch</a>.</p>
+<div class="highlight"><pre> <span class="kt">uint8_t</span> <span class="n">leds</span> <span class="o">=</span> <span class="n">pgm_read_word_near</span><span class="p">(</span> <span class="o">&amp;</span><span class="p">(</span><span class="n">sequence</span><span class="p">[</span><span class="n">s</span><span class="p">][</span><span class="n">current_step</span><span class="p">][</span><span class="mi">0</span><span class="p">]));</span>
+</pre></div>
+
+
+<p><strong>All solved ?</strong> Well no, <a href="http://homepage.ntlworld.com/vangelderp/">Paul Van Gelder</a> posted a change to <a href="https://github.com/bmsleight/chameleon-cufflink/pull/1/files">Stop that Flash Jitter</a>. Which worked very well:-</p>
+<p><img src="images/Stop-that-Flash-Jitter/Stop_That_Jitter.gif" /></p>
             </div>
             <!-- /.entry-content -->
         </article>
