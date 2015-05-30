@@ -3,7 +3,7 @@ Date: 2015-04-19 17:00
 Category: blog
 Tags: cuffelinks, rgb
 Author: Brendan M. Sleight
-Summary: Miniature RGB soldered on test board.
+
 
 I designed a [prototype PCB](https://github.com/bmsleight/chameleon-cufflink/tree/master/pcb/breakout-test-pcb) in kicad and then ordered a small batch of them from the great [oshpark.com](https://oshpark.com/). I used interesting method to solder them, put the PCB on a standalone electric hotplate, move the components in to place with the aid of a USB microscope. 
 

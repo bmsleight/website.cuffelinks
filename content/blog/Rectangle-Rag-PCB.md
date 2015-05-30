@@ -3,7 +3,7 @@ Date: 2015-04-22 23:59
 Category: blog
 Tags: cuffelinks, traffic, PCB
 Author: Brendan M. Sleight
-Summary: Rectangle RAG PCB
+
 
 Following some fun looking at [outlines for laser-cut-traffic-light-cufflink.html](../laser-cut-traffic-light-cufflink.html) I whipped up a quick PCB using [KiCad](http://www.kicad-pcb.org/display/KICAD/KiCad+EDA+Software+Suite). Was quite surprised when all the components fit on the PCB and the routing was possible, I thought it would not work. 
 

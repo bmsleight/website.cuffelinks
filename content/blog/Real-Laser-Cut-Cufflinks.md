@@ -3,7 +3,7 @@ Date: 2015-05-27 20:00
 Category: blog
 Tags: cuffelinks, traffic,
 Author: Brendan M. Sleight
-Summary: Rectangle Laser Cut Traffic Light Cufflink
+
 
 Following on from [Laser Cut Traffic Light Cufflink](./laser-cut-traffic-light-cufflink.html) I fired up the [London Hackspace Laser Cutter](https://wiki.london.hackspace.org.uk/view/Silvertail_A0_Laser_Cutter)
 
@@ -18,13 +18,13 @@ I weld the layers together, with a screw embedded, then bolt the top layer.
 <a href="images/Real-Laser-Cut-Cufflinks/fitted.jpg"><img src="images/Real-Laser-Cut-Cufflinks/thumbnails/480x_/fitted.jpg" /></a>
 
 #### Screw/Bolt head Too Big
-The bolt head is too big - forcign the sides out. I will just drop down to M1.6 screws, not M2 so that the head is ~3mm diameter. 
+The bolt head is too big - forcing the sides out. I will just drop down to M1.6 screws, not M2 so that the head is ~3mm diameter. 
 
 <a href="images/Real-Laser-Cut-Cufflinks/too-big.jpg"><img src="images/Real-Laser-Cut-Cufflinks/thumbnails/480x_/too-big.jpg" /></a>
 
 #### Fingerprints in Weld
 
-The welding of the parts has tell tale signs of a finger print, so I need to build a jig to hold them whilst welding. 
+The welding of the parts has tell tale signs of a fingerprints, so I need to build a jig to hold them whilst welding. 
 
 <a href="images/Real-Laser-Cut-Cufflinks/finished.jpg"><img src="images/Real-Laser-Cut-Cufflinks/thumbnails/480x_/finished.jpg" /></a>
 

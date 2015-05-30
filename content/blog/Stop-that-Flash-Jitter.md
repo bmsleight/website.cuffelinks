@@ -3,7 +3,7 @@ Date: 2015-05-06 14:00
 Category: blog
 Tags: cuffelinks, traffic, rag, arduino
 Author: Brendan M. Sleight
-Summary: Stop that Flash Jitter, simple ardunio sketch for traffic signals
+
 
 Now I have written a full, interrupt driven sketches for an [arduino running some traffic signals](https://github.com/bmsleight/arduino-traffic-signals). An extract is shown below:-
 ```C++

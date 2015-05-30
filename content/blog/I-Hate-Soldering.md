@@ -3,7 +3,7 @@ Date: 2015-05-06 14:00
 Category: blog
 Tags: cuffelinks, soldering
 Author: Brendan M. Sleight
-Summary: I am not good at soldering, so get over it. 
+
 
 I am not very good at soldering and for this project with have lots of SMD to get on to a PCB. I have many a swear word and many a curse. So after extensive searching, I have ordered a [Hot Air rework station](https://www.youtube.com/watch?v=vva2t21sOAs). I have also used the [London Hackspace Laser Cutter](https://wiki.london.hackspace.org.uk/view/Silvertail_A0_Laser_Cutter) to make a jog and a solder stecil. 
 

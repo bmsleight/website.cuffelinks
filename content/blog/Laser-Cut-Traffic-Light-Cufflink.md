@@ -3,7 +3,7 @@ Date: 2015-04-20 23:59
 Category: blog
 Tags: cuffelinks, traffic,
 Author: Brendan M. Sleight
-Summary: Rectangle Laser Cut Traffic Light Cufflink
+
 
 I had a play with a laser-cut rectangle case for the traffic light cufflink. First step was using [Tinkercad](https://www.tinkercad.com/) to create a 3-d sketch/mock-up. Still looks very tight to get the traces to fit on the PCB. This is with an outside case of 13.5 x 22.00 mm. I designed the screws to be captive between the 3,4 & 5 layers of acrylic. 
 

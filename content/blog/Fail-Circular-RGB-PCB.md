@@ -3,7 +3,6 @@ Date: 2015-05-04 17:00
 Category: blog
 Tags: cuffelinks, rgb, PCB, fail
 Author: Brendan M. Sleight
-Summary: Fail - Circular RGB PCB
 
 **Epic fail**. My [circular PCB](./circular-rgb-pcb.html) will not work. I did the testing using 5V from the arduino nano board. Without thinking through what the cell batteries will actually deliver. Looking up the [datasheet for the TCS34725](http://www.adafruit.com/datasheets/TCS34725.pdf) I remembers that I needed at least 3V3 for the supply, also the Blue LED on the [HSMF-C114](http://www.avagotech.com/docs/AV02-2451EN) of typically 3V4. No problem - I had designed the circuit to run on 2 cell barreries, which deliver 6V.
 

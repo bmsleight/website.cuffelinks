@@ -3,7 +3,7 @@ Date: 2015-04-19 21:00
 Category: blog
 Tags: cuffelinks, rgb, python, dxf	
 Author: Brendan M. Sleight
-Summary: RGB Components, size matters.
+
 
 I am tring to work out how many layers of laser cut acrylic I will need, in total. I am using 2mm acrylic.
 

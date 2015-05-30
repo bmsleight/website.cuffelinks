@@ -59,4 +59,7 @@ STATIC_PATHS = (['images'])
 PLUGINS = ['advthumbnailer']
 
 #ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
-#ARTICLE_SAVE_AS = './{date:%Y}/{date:%m}/{slug}.html'
+#ARTICLE_SAVE_AS = './{date:%Y}/{date:%m}/{slug}.html']
+
+#DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
