@@ -57,9 +57,6 @@ Cuffelinks            </a>
                          <li><a href="../pages/about.html">
                              About
                           </a></li>
-                        <li >
-                            <a href="../category/blog.html">Blog</a>
-                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="../archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
@@ -91,56 +88,80 @@ Cuffelinks            </a>
             <hr/>
             <article>
                 <h2><a href="../i-hate-soldering.html">I Hate Soldering</a></h2>
-                <div class="summary"><p>I am not good at soldering, so get over it.</p>
+                <div class="summary"><p>I am not very good at soldering and for this project with have lots of SMD to get on to a PCB. I have many a swear word and many a curse. So after extensive searching, I have ordered a <a href="https://www.youtube.com/watch?v=vva2t21sOAs">Hot Air rework station</a>. I have also used the <a href="https://wiki.london.hackspace.org.uk/view/Silvertail_A0_Laser_Cutter">London ...</a></p>
                     <a class="btn btn-default btn-xs" href="../i-hate-soldering.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
                 <h2><a href="../stop-that-flash-jitter.html">Stop that Flash Jitter</a></h2>
-                <div class="summary"><p>Stop that Flash Jitter, simple ardunio sketch for traffic signals</p>
+                <div class="summary"><p>Now I have written a full, interrupt driven sketches for an <a href="https://github.com/bmsleight/arduino-traffic-signals">arduino running some traffic signals</a>. An extract is shown below:-</p>
+<div class="highlight"><pre>  <span class="k">if</span> <span class="p">((</span><span class="n">_state</span> <span class="o">==</span> <span class="n">PHASE_GREEN</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">_phase_change</span> <span class="o">==</span> <span class="n">PHASE_CHANGE_TO_RED</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// On Green want Red</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ran_min_green</span><span class="p">())</span> <span class="p">{</span>
+      <span class="n">_state</span> <span class="o">=</span> <span class="n">PHASE_POST_GREEN</span><span class="p">;</span>
+      <span class="n">_phase_change</span> <span class="o">=</span> <span class="n">PHASE_CHANGE_NONE</span><span class="p">;</span>
+      <span class="n">_time_since_green_milliseconds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="n">_time_on_current_state_milliseconds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">debug_to_serial</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Leaving Green&quot;</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+
+
+<p><img src="images/Stop-that-Flash-Jitter/arduino-traffic-signals.gif" /></p>
+<p>However for this project ...</p>
                     <a class="btn btn-default btn-xs" href="../stop-that-flash-jitter.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
                 <h2><a href="../fail-circular-rgb-pcb.html">Fail - Circular RGB PCB</a></h2>
-                <div class="summary"><p>Fail - Circular RGB PCB</p>
+                <div class="summary"><p><strong>Epic fail</strong>. My <a href="./circular-rgb-pcb.html">circular PCB</a> will not work. I did the testing using 5V from the arduino nano board. Without thinking through what the cell batteries will actually deliver. Looking up the <a href="http://www.adafruit.com/datasheets/TCS34725.pdf">datasheet for the TCS34725</a> I remembers that I needed at least 3V3 for the supply, also the Blue ...</p>
                     <a class="btn btn-default btn-xs" href="../fail-circular-rgb-pcb.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
                 <h2><a href="../circular-rgb-pcb.html">Circular RGB PCB</a></h2>
-                <div class="summary"><p>Circular RGB PCB</p>
+                <div class="summary"><p>I spent some time over the weekend making the RGB version of the cufflink as small as possible, in particular the PCB. The overall size is limited by the cell being 12.5mm diameter. It is differrcult to embed the fixing screws in the same way as <a href="../laser-cut-traffic-light-cufflink.html">outlines for rectangular ...</a></p>
                     <a class="btn btn-default btn-xs" href="../circular-rgb-pcb.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
                 <h2><a href="../rectangle-rag-pcb.html">Rectangle RAG PCB</a></h2>
-                <div class="summary"><p>Rectangle RAG PCB</p>
+                <div class="summary"><p>Following some fun looking at <a href="../laser-cut-traffic-light-cufflink.html">outlines for laser-cut-traffic-light-cufflink.html</a> I whipped up a quick PCB using <a href="http://www.kicad-pcb.org/display/KICAD/KiCad+EDA+Software+Suite">KiCad</a>. Was quite surprised when all the components fit on the PCB and the routing was possible, I thought it would not work. </p>
+<p><a href="images/rectangle-rag-pcb/kicad.png"><img src="images/rectangle-rag-pcb/thumbnails/480x_/kicad.png" /></a></p>
+<p>You can view all the raw KiCad files in the <a href="https://github.com/bmsleight/chameleon-cufflink/tree/master/pcb/rectangle-rag-pcb">git ...</a></p>
                     <a class="btn btn-default btn-xs" href="../rectangle-rag-pcb.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
                 <h2><a href="../laser-cut-traffic-light-cufflink.html">Laser Cut Traffic Light Cufflink</a></h2>
-                <div class="summary"><p>Rectangle Laser Cut Traffic Light Cufflink</p>
+                <div class="summary"><p>I had a play with a laser-cut rectangle case for the traffic light cufflink. First step was using <a href="https://www.tinkercad.com/">Tinkercad</a> to create a 3-d sketch/mock-up. Still looks very tight to get the traces to fit on the PCB. This is with an outside case of 13.5 x 22.00 ...</p>
                     <a class="btn btn-default btn-xs" href="../laser-cut-traffic-light-cufflink.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
                 <h2><a href="../rgb-components.html">RGB Components</a></h2>
-                <div class="summary"><p>RGB Components, size matters.</p>
+                <div class="summary"><p>I am tring to work out how many layers of laser cut acrylic I will need, in total. I am using 2mm acrylic.</p>
+<p><a href="images/RGB-Components/sketch.jpg"><img src="images/RGB-Components/thumbnails/480x_/sketch.jpg" /></a></p>
+<p>I have used a nice <a href="https://github.com/bmsleight/chameleon-cufflink/blob/master/case/laser_clear.py">python script</a> to generate a dxf file than can be laoded on the <a href="https://wiki.london.hackspace.org.uk/view/Silvertail_A0_Laser_Cutter">laser cutter</a>. It used the most excellent <a href="https://pypi.python.org/pypi/dxfwrite/">dxfwrite</a>. </p>
+<p>At ...</p>
                     <a class="btn btn-default btn-xs" href="../rgb-components.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
                 <h2><a href="../miniature-rgb.html">Miniature RGB</a></h2>
-                <div class="summary"><p>Miniature RGB soldered on test board.</p>
+                <div class="summary"><p>I designed a <a href="https://github.com/bmsleight/chameleon-cufflink/tree/master/pcb/breakout-test-pcb">prototype PCB</a> in kicad and then ordered a small batch of them from the great <a href="https://oshpark.com/">oshpark.com</a>. I used interesting method to solder them, put the PCB on a standalone electric hotplate, move the components in to place with the aid of a USB microscope. </p>
+<p><a href="images/Miniature-RGB/soldering.jpg"><img src="images/Miniature-RGB/thumbnails/480x_/soldering.jpg" /></a></p>
+<p>This actually ...</p>
                     <a class="btn btn-default btn-xs" href="../miniature-rgb.html">more ...</a>
                 </div>
             </article>
@@ -170,18 +191,23 @@ Cuffelinks            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-2">
-                        <a href="../tag/rgb.html">
-                            rgb
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-2">
                         <a href="../tag/pcb.html">
                             PCB
                         </a>
                     </li>
                     <li class="list-group-item tag-2">
+                        <a href="../tag/rgb.html">
+                            rgb
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-2">
                         <a href="../tag/traffic.html">
                             traffic
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../tag/rag.html">
+                            rag
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -195,8 +221,13 @@ Cuffelinks            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="../tag/arduino.html">
-                            arduino
+                        <a href="../tag/dxf.html">
+                            dxf
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -205,18 +236,8 @@ Cuffelinks            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="../tag/dxf.html">
-                            dxf
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="../tag/rag.html">
-                            rag
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="../tag/pelican.html">
-                            pelican
+                        <a href="../tag/arduino.html">
+                            arduino
                         </a>
                     </li>
                 </ul>

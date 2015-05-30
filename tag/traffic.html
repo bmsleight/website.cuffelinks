@@ -57,9 +57,6 @@ Cuffelinks            </a>
                          <li><a href="../pages/about.html">
                              About
                           </a></li>
-                        <li >
-                            <a href="../category/blog.html">Blog</a>
-                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="../archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
@@ -91,21 +88,40 @@ Cuffelinks            </a>
             <hr/>
             <article>
                 <h2><a href="../stop-that-flash-jitter.html">Stop that Flash Jitter</a></h2>
-                <div class="summary"><p>Stop that Flash Jitter, simple ardunio sketch for traffic signals</p>
+                <div class="summary"><p>Now I have written a full, interrupt driven sketches for an <a href="https://github.com/bmsleight/arduino-traffic-signals">arduino running some traffic signals</a>. An extract is shown below:-</p>
+<div class="highlight"><pre>  <span class="k">if</span> <span class="p">((</span><span class="n">_state</span> <span class="o">==</span> <span class="n">PHASE_GREEN</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">_phase_change</span> <span class="o">==</span> <span class="n">PHASE_CHANGE_TO_RED</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// On Green want Red</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ran_min_green</span><span class="p">())</span> <span class="p">{</span>
+      <span class="n">_state</span> <span class="o">=</span> <span class="n">PHASE_POST_GREEN</span><span class="p">;</span>
+      <span class="n">_phase_change</span> <span class="o">=</span> <span class="n">PHASE_CHANGE_NONE</span><span class="p">;</span>
+      <span class="n">_time_since_green_milliseconds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="n">_time_on_current_state_milliseconds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">debug_to_serial</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Leaving Green&quot;</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+
+
+<p><img src="images/Stop-that-Flash-Jitter/arduino-traffic-signals.gif" /></p>
+<p>However for this project ...</p>
                     <a class="btn btn-default btn-xs" href="../stop-that-flash-jitter.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
                 <h2><a href="../rectangle-rag-pcb.html">Rectangle RAG PCB</a></h2>
-                <div class="summary"><p>Rectangle RAG PCB</p>
+                <div class="summary"><p>Following some fun looking at <a href="../laser-cut-traffic-light-cufflink.html">outlines for laser-cut-traffic-light-cufflink.html</a> I whipped up a quick PCB using <a href="http://www.kicad-pcb.org/display/KICAD/KiCad+EDA+Software+Suite">KiCad</a>. Was quite surprised when all the components fit on the PCB and the routing was possible, I thought it would not work. </p>
+<p><a href="images/rectangle-rag-pcb/kicad.png"><img src="images/rectangle-rag-pcb/thumbnails/480x_/kicad.png" /></a></p>
+<p>You can view all the raw KiCad files in the <a href="https://github.com/bmsleight/chameleon-cufflink/tree/master/pcb/rectangle-rag-pcb">git ...</a></p>
                     <a class="btn btn-default btn-xs" href="../rectangle-rag-pcb.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
                 <h2><a href="../laser-cut-traffic-light-cufflink.html">Laser Cut Traffic Light Cufflink</a></h2>
-                <div class="summary"><p>Rectangle Laser Cut Traffic Light Cufflink</p>
+                <div class="summary"><p>I had a play with a laser-cut rectangle case for the traffic light cufflink. First step was using <a href="https://www.tinkercad.com/">Tinkercad</a> to create a 3-d sketch/mock-up. Still looks very tight to get the traces to fit on the PCB. This is with an outside case of 13.5 x 22.00 ...</p>
                     <a class="btn btn-default btn-xs" href="../laser-cut-traffic-light-cufflink.html">more ...</a>
                 </div>
             </article>
@@ -135,18 +151,23 @@ Cuffelinks            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-2">
-                        <a href="../tag/rgb.html">
-                            rgb
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-2">
                         <a href="../tag/pcb.html">
                             PCB
                         </a>
                     </li>
                     <li class="list-group-item tag-2">
+                        <a href="../tag/rgb.html">
+                            rgb
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-2">
                         <a href="../tag/traffic.html">
                             traffic
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../tag/rag.html">
+                            rag
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -160,8 +181,13 @@ Cuffelinks            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="../tag/arduino.html">
-                            arduino
+                        <a href="../tag/dxf.html">
+                            dxf
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -170,18 +196,8 @@ Cuffelinks            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="../tag/dxf.html">
-                            dxf
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="../tag/rag.html">
-                            rag
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="../tag/pelican.html">
-                            pelican
+                        <a href="../tag/arduino.html">
+                            arduino
                         </a>
                     </li>
                 </ul>
