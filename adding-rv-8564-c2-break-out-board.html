@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>Adding RV-8564-C2 break-out board - Cuffelinks</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="./adding-rv-8564-c2-break-out-board.html">
+
+        <meta name="author" content="Brendan M. Sleight" />
+        <meta name="keywords" content="cuffelinks,rag,RV-8564-C2" />
+        <meta name="description" content="I need to write some software for the very, very small Real-Time-Clock chip, the RV-8564-C2. It is small (5.0 x 3.2 x 1.2mm), low-power chip with a with built-in crystal. Ideal for a cufflink, but far from ideal to wire in to a breadboard. I knocked-up a ..." />
+
+        <meta property="og:site_name" content="Cuffelinks" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Adding RV-8564-C2 break-out board"/>
+        <meta property="og:url" content="./adding-rv-8564-c2-break-out-board.html"/>
+        <meta property="og:description" content="I need to write some software for the very, very small Real-Time-Clock chip, the RV-8564-C2. It is small (5.0 x 3.2 x 1.2mm), low-power chip with a with built-in crystal. Ideal for a cufflink, but far from ideal to wire in to a breadboard. I knocked-up a ..."/>
+        <meta property="article:published_time" content="2012-10-02" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="cuffelinks" />
+            <meta property="article:tag" content="rag" />
+            <meta property="article:tag" content="RV-8564-C2" />
+            <meta property="article:author" content="Brendan M. Sleight" />
+
+    <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@bmsleight">
+        <meta name="twitter:creator" content="@bmsleight">
+    <meta name="twitter:domain" content=".">
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="./theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Cuffelinks ATOM Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="./" class="navbar-brand">
+Cuffelinks            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="./pages/about.html">
+                             About
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="./archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./adding-rv-8564-c2-break-out-board.html"
+                       rel="bookmark"
+                       title="Permalink to Adding RV-8564-C2 break-out board">
+                        Adding RV-8564-C2 break-out board
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2012-10-02T12:00:00+01:00"> Tue 02 October 2012</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/cuffelinks.html">cuffelinks</a>
+        /
+	<a href="./tag/rag.html">rag</a>
+        /
+	<a href="./tag/rv-8564-c2.html">RV-8564-C2</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>I need to write some software for the very, very small Real-Time-Clock chip, the RV-8564-C2. It is small (5.0 x 3.2 x 1.2mm), low-power chip with a with built-in crystal. Ideal for a cufflink, but far from ideal to wire in to a breadboard.</p>
+<p>I knocked-up a quick break-out board and order if from http://oshpark.com/ – full <a href="https://github.com/bmsleight/cuffelink/tree/master/hardware/pcb/other/breakout_rtc">pcb in repository</a>.</p>
+<p><a href="images/Adding-RV-8564-C2-break-out-board/rtc_board.jpg"><img src="images/Adding-RV-8564-C2-break-out-board/thumbnails/480x_/rtc_board.jpg" /></a></p>
+<p>Now all I had to do it is solder the break-out board.</p>
+<p><a href="images/Adding-RV-8564-C2-break-out-board/Pre-Solder.jpg"><img src="images/Adding-RV-8564-C2-break-out-board/thumbnails/480x_/Pre-Solder.jpg" /></a></p>
+<p>A microscope is quite useful …</p>
+<p><a href="images/Adding-RV-8564-C2-break-out-board/Post-Solder.jpg"><img src="images/Adding-RV-8564-C2-break-out-board/thumbnails/480x_/Post-Solder.jpg" /></a></p>
+<p>Time to melt the solder paste blobs, “Honey can I borrow a frying pan ?” …</p>
+<p><a href="images/Adding-RV-8564-C2-break-out-board/IMG_20121002_211707.jpg"><img src="images/Adding-RV-8564-C2-break-out-board/thumbnails/480x_/IMG_20121002_211707.jpg" /></a></p>
+<p>And add some header pins. Although the holes in the board were too small from header pins (my error – I just used a DIP8 footprint), so I used some jumper cables. Volia:-</p>
+<p><a href="images/Adding-RV-8564-C2-break-out-board/IMG_20121002_213659.jpg"><img src="images/Adding-RV-8564-C2-break-out-board/thumbnails/480x_/IMG_20121002_213659.jpg" /></a></p>
+<p>Will test my soldering, code etc another day.  Was not happy with the cheap solder-paste – so I am on the hunt for better paste and a way to “paint” it on to the boards, without the use of a stencil. I guess at some point I will have to order solder stencil, but then I need to buy a frame to hold the boards. At the moment I will carry on “painting” the paste with the end of a wire.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="https://twitter.com/bmsleight"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+                <li class="list-group-item"><a href="https://twitter.com/cuffelink"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+                <li class="list-group-item"><a href="https://github.com/bmsleight/chameleon-cufflink"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                <li class="list-group-item"><a href="https://github.com/bmsleight/cuffelink"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="list-group-item"><a href="./"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group " id="tags">
+                    <li class="list-group-item tag-1">
+                        <a href="./tag/cuffelinks.html">
+                            cuffelinks
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="./tag/rag.html">
+                            rag
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-2">
+                        <a href="./tag/traffic.html">
+                            traffic
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-2">
+                        <a href="./tag/rgb.html">
+                            rgb
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-3">
+                        <a href="./tag/blender.html">
+                            blender
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-3">
+                        <a href="./tag/rv-8564-c2.html">
+                            RV-8564-C2
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-3">
+                        <a href="./tag/pelican.html">
+                            pelican
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-3">
+                        <a href="./tag/pcb.html">
+                            PCB
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-3">
+                        <a href="./tag/first.html">
+                            first
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="./tag/fail.html">
+                            fail
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="./tag/springs.html">
+                            springs
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="./tag/python.html">
+                            python
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="./tag/hackaday.html">
+                            hackaday
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="./tag/silver.html">
+                            silver
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="./tag/dxf.html">
+                            dxf
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="./tag/wolframalpha.html">
+                            wolframalpha
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="./tag/soldering.html">
+                            soldering
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="./tag/arduino.html">
+                            arduino
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="./tag/instructables.html">
+                            instructables
+                        </a>
+                    </li>
+                </ul>
+            </li>
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2015 Brendan M. Sleight
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="./theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="./theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
