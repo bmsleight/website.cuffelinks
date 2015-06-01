@@ -1,0 +1,33 @@
+Title: Had my Cuffelinks on all day
+Date: 2012-10-13 12:00
+Category: blog
+Tags: cuffelinks, rag, RV-8564-C2
+Author: Brendan M. Sleight
+
+I got the code updated to work with the RV-8564-C2 break-out board, [https://github.com/bmsleight/cuffelink/blob/master/software/micro/arduino/tiny_rag.ino](https://github.com/bmsleight/cuffelink/blob/master/software/micro/arduino/tiny_rag.ino);
+
+So it was time to try some solder paste again, but the components and PCB is so small that I needed to use a swing down magnifying lens that fitted over my glasses and a set of tweezers that had another magnifying glass built in.:-
+
+Now all I had to do it is solder the break-out board.
+
+<a href="images/One-Working-Prototype-Cuffelink/IMG_20121012_220944.jpg"><img src="images/One-Working-Prototype-Cuffelink/thumbnails/480x_/IMG_20121012_220944.jpg" /></a>
+
+After that crack open the frying-pan and cook for 6 mins. For scale the 1p piece is 20mm in diameter.
+
+<a href="images/One-Working-Prototype-Cuffelink/IMG_20121013_120100.jpg"><img src="images/One-Working-Prototype-Cuffelink/thumbnails/480x_/IMG_20121013_120100.jpg" /></a>
+
+I need to clear up two of the PCB, but the middle one looked usable.
+
+<a href="images/One-Working-Prototype-Cuffelink/photo-3.jpg"><img src="images/One-Working-Prototype-Cuffelink/thumbnails/480x_/photo-3.jpg" /></a>
+
+Yep, we have the Green Light to use this PCB! So time to fit it in a previous delivered outer cases.
+
+<a href="images/One-Working-Prototype-Cuffelink/Lights_normal_aspect.jpg"><img src="images/One-Working-Prototype-Cuffelink/thumbnails/480x_/Lights_normal_aspect.jpg" /></a>
+
+So see, the cuffelink in action:-
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/GpnWxmfzyew" frameborder="0" allowfullscreen></iframe>
+
+Sorry, not a great video – lacks focus. I will get a real cameras to make a video shortly.Still make me smile though! Next step, finish the second PCB so I have a pair of cufflink/cuffelinks to wear.
+
+

@@ -1,0 +1,13 @@
+Title: Hello World, Hello Hackaday, Hello new Demo Video
+Date: 2012-10-19 12:00
+Category: blog
+Tags: cuffelinks, rag, hackaday
+Author: Brendan M. Sleight
+
+So we got a post on [Hackaday. Very nice write-up](http://hackaday.com/2012/10/17/traffic-light-cufflinks/).
+
+Some nice comments, some help on issue where only two of the three LEDs flash when trying to signal a zero. To be honest I am thinking about kickstarter type of funding, but maybe do a few more prototypes.
+
+Got a new phone stand, so I produced a better video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rbpGlVypxOE" frameborder="0" allowfullscreen></iframe>

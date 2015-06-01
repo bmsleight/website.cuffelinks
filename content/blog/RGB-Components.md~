@@ -18,8 +18,8 @@ At the moment I have six layers:-
 It would be nice to reduce this down by one or two. Limiting factors:-
 
  * Two x Cell battery [CR1216 12.5 × 1.6 height](http://en.wikipedia.org/wiki/List_of_battery_sizes#Button_cells_-_coin.2C_watch) total: 3.2mm
- * [PCB Thinkness 0.6 to 0.8mm thickness ](http://dirtypcbs.com/) Total 0.8mm
- * Switch - found a (lovely switch 1.2mm height](http://www.mouser.com/ds/2/307/en-b3u-3615.pdf)
+ * [PCB Thinkness 0.6 to 0.8mm thickness](http://dirtypcbs.com/) Total 0.8mm
+ * Switch - found a [lovely switch 1.2mm height](http://www.mouser.com/ds/2/307/en-b3u-3615.pdf)
  
 <a href="images/RGB-Components/switch.png"><img src="images/RGB-Components/thumbnails/480x_/switch.png" /></a>
 

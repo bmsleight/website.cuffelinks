@@ -1,0 +1,14 @@
+Title: ATTiny85 Connected to DS1307
+Date: 2012-08-24 12:00
+Category: blog
+Tags: cuffelinks, rag
+Author: Brendan M. Sleight
+
+ATTiny85 connected to DS1307. This show the microchip, communicating with the Real Time Clock Chip (DS1307). Then showing the read time by flashing LED.
+With Green = 10, Amber = 5, Red = 0.
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/Vk38VLuX5W0" frameborder="0" allowfullscreen></iframe>
+
+The code is available [http://cuffelink.com/code/?p=cuffelink.git;a=tree;f=software/micro/arduino/attiny_to_rtc](https://github.com/bmsleight/cuffelink/tree/05ba9009046ccf2ed7d6e3ad26914c2f1193df8d/software/micro/arduino/attiny_to_rtc);
+
+So I have the traffic signals part working, the clock part working. Time to combine them and see if I get under the size of 4k

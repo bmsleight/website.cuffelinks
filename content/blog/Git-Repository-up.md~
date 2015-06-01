@@ -1,0 +1,18 @@
+Title: Git Repository up
+Date: 2012-08-23 12:00
+Category: blog
+Tags: cuffelinks, first
+Author: Brendan M. Sleight
+
+I need to upload some of my early models – so here are my first set of 3d-printed cufflinks. They are in plain [stainless steel](http://www.shapeways.com/materials/steel) printed by [Shapeways](http://www.shapeways.com/).
+
+<a href="images/The-First-Cufflinks/single_cufflink.jpg"><img src="images/The-First-Cufflinks/thumbnails/480x_/single_cufflink.jpg" /></a>
+
+
+
+I set up a git repository, so all the software and hardware is fully available. This really is a work in progress and I need to clean off some of the files. There is nothing like making something opensource to enforce good standards on someone.
+
+All the hardware schematics will be uploaded, shortly. In the meantime, load this folder and fire up OpenScad and press F5.
+
+<a href="images/Git-Repository-up/cuffelink_scad.png"><img src="images/Git-Repository-up/thumbnails/480x_/cuffelink_scad.png" /></a>
+

@@ -9,7 +9,7 @@ I spent some time over the weekend making the RGB version of the cufflink as sma
 
 <a href="images/Circular-RGB-PCB/layers_clear.png"><img src="images/Circular-RGB-PCB/thumbnails/480x_/layers_clear.png" /></a>
 
-With the design in mind, I planned out the PCB. It was really tight to get all the routes in via [freerouting](http://rusefi.com/forum/viewtopic.php?f=4&t=593). In the end I got a working PCB layout.
+With the design in mind, I planned out the PCB. It was really tight to get all the routes in via [freerouting](http://rusefi.com/forum/viewtopic.php?f=4&t=593) . In the end I got a working PCB layout.
 
 <a href="images/Circular-RGB-PCB/circuit.png"><img src="images/Circular-RGB-PCB/thumbnails/480x_/circuit.png" /></a>
 

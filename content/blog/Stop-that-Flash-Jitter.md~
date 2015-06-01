@@ -23,7 +23,7 @@ Now I have written a full, interrupt driven sketches for an [arduino running som
 <img src="images/Stop-that-Flash-Jitter/arduino-traffic-signals.gif" />
 	
 
-However for this project, I do not need interrupts - so I using some simplicity on this timing. I do not want the signals to cycle forever so I have added an END_SEQUENCE. Based upon the [rectangle PCB](./rectangle-rag-pcb.html) With the following circuit, I put together a simple sketch. I borrowed the concept of using bits for each of the Red, Amber and Green from [Paul Van Gelder](http://homepage.ntlworld.com/vangelderp/) 
+However for this project, I do not need interrupts - so I using some simplicity on the timing. I also do not want the signals to cycle forever so I have added an END_SEQUENCE. Based upon the [rectangle PCB](./rectangle-rag-pcb.html) With the following circuit, I put together a simple sketch. I borrowed the concept of using bits for each of the Red, Amber and Green from [Paul Van Gelder](http://homepage.ntlworld.com/vangelderp/) 
 
 <a href="images/Stop-that-Flash-Jitter/circuit-diagram.png"><img src="images/Stop-that-Flash-Jitter/thumbnails/480x_/circuit-diagram.png" /></a>
 
